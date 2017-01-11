@@ -11,7 +11,7 @@
 
     setCustom($key, $attributes) //unique key and attributes array
     unsetCustom($keys) //array or single value
-    
+
     getMeta() // return metas string
 ```
 
@@ -39,8 +39,8 @@
     <!DOCTYPE html>
     <html>
         <head>
-            <?=$this->metatag->getTitle();?>
-            <?=$this->metatag->getMeta();?>
+            <?php echo $this->metatag->getTitle();?>
+            <?php echo $this->metatag->getMeta();?>
         </head>
         <body>
              <?php echo $this->getContent(); ?>
