@@ -1,4 +1,4 @@
-Class functions:
+#Class functions:
 setTitle($title)
 getTitle()
 setByProperty($property, $content)
@@ -9,13 +9,14 @@ setCustom($key, $attributes) //unique key and attributes array
 unsetCustom($keys) //array or single value
 getMeta() // return metas string
 
-Usage:
-Register service:
-$di = new DI();
-$di->set('metatag', function() use ($config) {
-	return new IzicaMetaTags();
-});
-
+#Usage:
+##Register service:
+```java
+    $di = new DI();
+    $di->set('metatag', function() use ($config) {
+    	return new IzicaMetaTags();
+    });
+```
 Set meta info:
 $this->metatag->setTitle("Phalcon MetaTags Service");
 
