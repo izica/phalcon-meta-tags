@@ -1,13 +1,15 @@
 ##Class functions:
-setTitle($title)
-getTitle()
-setByProperty($property, $content)
-unsetByProperty($properties) //array or single property name
-setByName($name, $content)
-unsetByName($properties) //array or single name
-setCustom($key, $attributes) //unique key and attributes array
-unsetCustom($keys) //array or single value
-getMeta() // return metas string
+```php
+    setTitle($title)
+    getTitle()
+    setByProperty($property, $content)
+    unsetByProperty($properties) //array or single property name
+    setByName($name, $content)
+    unsetByName($properties) //array or single name
+    setCustom($key, $attributes) //unique key and attributes array
+    unsetCustom($keys) //array or single value
+    getMeta() // return metas string
+```
 
 #Usage:
 ##Register service:
@@ -18,7 +20,7 @@ getMeta() // return metas string
     });
 ```
 ##Set meta info:
-```javascript
+```php
     $this->metatag->setTitle("Phalcon MetaTags Service");
 
     $this->metatag->setCustom("charset", ['charset' => 'UTF-8']);
@@ -29,7 +31,7 @@ getMeta() // return metas string
     $this->metatag->setByProperty("og:description", "When Great Minds Don’t Think Alike");
 ```
 ##Example view:
-```html
+```php
 <!DOCTYPE html>
     <html>
         <head>
@@ -42,8 +44,10 @@ getMeta() // return metas string
     </html>
 ```
 Output:
-<title>Phalcon MetaTags Service</title>        
-<meta name="description" content="phalcon php metatags">
-<meta property="og:description" content="When Great Minds Don’t Think Alike">
-<meta charset="UTF-8">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">  
+```html
+    <title>Phalcon MetaTags Service</title>        
+    <meta name="description" content="phalcon php metatags">
+    <meta property="og:description" content="When Great Minds Don’t Think Alike">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">  
+```
