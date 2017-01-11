@@ -1,3 +1,8 @@
+#Install
+```bash
+    composer require izica/phalcon-meta-tags
+```
+#Usage:
 ##Class functions:
 ```php
     setTitle($title)
@@ -14,8 +19,6 @@
 
     getMeta() // return metas string
 ```
-
-#Usage:
 ##Register service:
 ```php
     $di = new DI();
