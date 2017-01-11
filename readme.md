@@ -11,9 +11,9 @@ getMeta() // return metas string
 
 #Usage:
 ##Register service:
-```java
+```javascript
     $di = new DI();
-    $di->set('metatag', function() use ($config) {
+    $di->set('metatag', function() {
     	return new IzicaMetaTags();
     });
 ```
