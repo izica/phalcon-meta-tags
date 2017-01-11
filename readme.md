@@ -2,12 +2,16 @@
 ```php
     setTitle($title)
     getTitle()
+
     setByProperty($property, $content)
     unsetByProperty($properties) //array or single property name
+
     setByName($name, $content)
     unsetByName($properties) //array or single name
+
     setCustom($key, $attributes) //unique key and attributes array
     unsetCustom($keys) //array or single value
+    
     getMeta() // return metas string
 ```
 
@@ -32,7 +36,7 @@
 ```
 ##Example view:
 ```php
-<!DOCTYPE html>
+    <!DOCTYPE html>
     <html>
         <head>
             <?=$this->metatag->getTitle();?>
@@ -43,7 +47,8 @@
         </body>
     </html>
 ```
-Output:
+
+##Output:
 ```html
     <title>Phalcon MetaTags Service</title>        
     <meta name="description" content="phalcon php metatags">
