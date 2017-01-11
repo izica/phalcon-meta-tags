@@ -53,9 +53,9 @@ class IzicaMetaTags
 
     }
 
-    public function setCustom($key, $array)
+    public function setCustom($key, $attributes)
     {
-        $this->meta_custom[$key] = $array;
+        $this->meta_custom[$key] = $attributes;
     }
 
     public function unsetCustom($keys){

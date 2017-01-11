@@ -1,3 +1,14 @@
+Class functions:
+setTitle($title)
+getTitle()
+setByProperty($property, $content)
+unsetByProperty($properties) //array or single property name
+setByName($name, $content)
+unsetByName($properties) //array or single name
+setCustom($key, $attributes) //unique key and attributes array
+unsetCustom($keys) //array or single value
+getMeta() // return metas string
+
 Usage:
 Register service:
 $di = new DI();
