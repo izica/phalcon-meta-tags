@@ -28,14 +28,22 @@
 ```
 ##Set meta info:
 ```php
-    $this->metatag->setTitle("Phalcon MetaTags Service");
+    use Phalcon\Mvc\Controller;
 
-    $this->metatag->setCustom("charset", ['charset' => 'UTF-8']);
-    $this->metatag->setCustom("http", ['http-equiv' => 'content-type', 'content' => 'text/html; charset=UTF-8']);
+    class IndexController extends Controller
+    {
+        public function indexAction()
+        {
+            $this->metatag->setTitle("Phalcon MetaTags Service");
 
-    $this->metatag->setByName("description", "phalcon php metatags");
+            $this->metatag->setCustom("charset", ['charset' => 'UTF-8']);
+            $this->metatag->setCustom("http", ['http-equiv' => 'content-type', 'content' => 'text/html; charset=UTF-8']);
 
-    $this->metatag->setByProperty("og:description", "When Great Minds Don’t Think Alike");
+            $this->metatag->setByName("description", "phalcon php metatags");
+
+            $this->metatag->setByProperty("og:description", "When Great Minds Don’t Think Alike");
+        }
+    }
 ```
 ##Example view:
 ```php
