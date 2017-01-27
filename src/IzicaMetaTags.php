@@ -14,12 +14,15 @@ class IzicaMetaTags
 
     public function getTitle()
     {
-        return '<title>'.$this->title.'</title>';
+        if($this->title != "")
+            return '<title>'.$this->title.'</title>';
+        else
+            return "";
     }
 
     public function setByProperty($property, $content)
     {
-        $this->meta_property[$property] = $content;
+        $this->meta_property[$property] = htmlentities($content);
     }
 
     public function unsetByProperty($properties){
@@ -37,7 +40,7 @@ class IzicaMetaTags
 
     public function setByName($name, $content)
     {
-        $this->meta_name[$name] = $content;
+        $this->meta_name[$name] = htmlentities($content);
     }
 
     public function unsetByName($names){
@@ -55,6 +58,9 @@ class IzicaMetaTags
 
     public function setCustom($key, $attributes)
     {
+        foreach ($attributes as &$value) {
+            $value = htmlentities($value);
+        }
         $this->meta_custom[$key] = $attributes;
     }
 
