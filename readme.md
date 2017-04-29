@@ -1,9 +1,9 @@
-#Install
+# Install
 ```bash
     composer require izica/phalcon-meta-tags
 ```
-#Usage:
-##Class functions:
+# Usage:
+## Class functions:
 ```php
     setTitle($title)
     getTitle()
@@ -19,14 +19,14 @@
 
     getMeta() // return metas string
 ```
-##Register service:
+## Register service:
 ```php
     $di = new DI();
     $di->set('metatag', function() {
     	return new IzicaMetaTags();
     });
 ```
-##Set meta info:
+## Set meta info:
 ```php
     use Phalcon\Mvc\Controller;
 
@@ -45,7 +45,7 @@
         }
     }
 ```
-##Example view:
+## Example view:
 ```php
     <!DOCTYPE html>
     <html>
@@ -59,7 +59,7 @@
     </html>
 ```
 
-##Output:
+## Output:
 ```html
     <title>Phalcon MetaTags Service</title>        
     <meta name="description" content="phalcon php metatags">
