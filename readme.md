@@ -5,7 +5,7 @@ This plugin allows you to easily and flexibly customize the meta tags of your vi
 * [Install](#Install)
 * [Plugin functions](#Plugin functions)
 * [Usage](#Usage)
-    * [Register plugin as service](##Register plugin as service)
+    * [Register plugin as service](##Register-plugin-as-service)
     * [Add data to your layout](##Add data to your layout)
     * [Use service in controller, view or middleware(anywhere)](##Use service in controller, view or middleware(anywhere))
     * [Example of output](##Example of output)
