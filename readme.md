@@ -7,7 +7,7 @@ This plugin allows you to easily and flexibly customize the meta tags of your vi
 * [Usage](#Usage)
     * [Register plugin as service](#Register-plugin-as-service)
     * [Add data to your layout](#Add-data-to-your-layout)
-    * [Use service in controller, view or middleware(anywhere)](#Use-service-in-controller,-view-or-middleware(anywhere))
+    * [Use service in controller, view or middleware(anywhere)](#use-service-in-controller-view-or-middlewareanywhere)
     * [Example of output](#Example-of-output)
 
 # Install
@@ -69,3 +69,4 @@ This plugin allows you to easily and flexibly customize the meta tags of your vi
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">  
 ```
+
