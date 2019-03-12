@@ -1,3 +1,9 @@
+# About
+Phalcon meta tags plugin for PhalconPHP.
+This plugin allows you to easily and flexibly customize the meta tags of your view.
+
+* [Install](#Install)
+
 # Install
 ```bash
     composer require izica/phalcon-meta-tags
