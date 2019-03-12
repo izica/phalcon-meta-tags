@@ -3,36 +3,44 @@ Phalcon meta tags plugin for PhalconPHP.
 This plugin allows you to easily and flexibly customize the meta tags of your view.
 
 * [Install](#Install)
+* [Plugin functions](# Plugin functions)
+* [Usage](#Usage)
+    * [Register plugin as service](##Register plugin as service)
+    * [Add data to your layout](##Add data to your layout)
+    * [Use service in controller, view or middleware(anywhere)](## Use service in controller, view or middleware(anywhere))
+    * [Example of output](## Example of output)
 
 # Install
 ```bash
     composer require izica/phalcon-meta-tags
 ```
+
+# Plugin functions
+
 # Usage:
-## Class functions:
-```php
-    setTitle($title)
-    getTitle()
-
-    setByProperty($property, $content)
-    unsetByProperty($properties) //array or single property name
-
-    setByName($name, $content)
-    unsetByName($properties) //array or single name
-
-    setCustom($key, $attributes) //unique key and attributes array
-    unsetCustom($keys) //array or single value
-
-    getMeta() // return metas string
-```
-## Register service:
+## Register plugin as service:
 ```php
     $di = new DI();
     $di->set('metatag', function() {
     	return new IzicaMetaTags();
     });
 ```
-## Set meta info:
+
+## Add data to your layout:
+```php
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <?php echo $this->metatag->getTitle();?>
+            <?php echo $this->metatag->getMeta();?>
+        </head>
+        <body>
+             <?php echo $this->getContent(); ?>
+        </body>
+    </html>
+```
+
+## Use service in controller, view or middleware(anywhere):
 ```php
     use Phalcon\Mvc\Controller;
 
@@ -51,21 +59,9 @@ This plugin allows you to easily and flexibly customize the meta tags of your vi
         }
     }
 ```
-## Example view:
-```php
-    <!DOCTYPE html>
-    <html>
-        <head>
-            <?php echo $this->metatag->getTitle();?>
-            <?php echo $this->metatag->getMeta();?>
-        </head>
-        <body>
-             <?php echo $this->getContent(); ?>
-        </body>
-    </html>
-```
 
-## Output:
+
+## Example of output:
 ```html
     <title>Phalcon MetaTags Service</title>        
     <meta name="description" content="phalcon php metatags">
