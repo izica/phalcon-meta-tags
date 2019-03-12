@@ -1,6 +1,7 @@
 # About
 Phalcon meta tags plugin for PhalconPHP.
 This plugin allows you to easily and flexibly customize the meta tags of your view.
+If this plugin helped you, be glad to see your star, thank you.
 
 * [Install](#Install)
 * [Plugin functions](#Plugin-functions)
@@ -16,6 +17,20 @@ This plugin allows you to easily and flexibly customize the meta tags of your vi
 ```
 
 # Plugin functions
+
+```php
+    setTitle($title)
+    getTitle()
+    setByProperty($property, $content)
+    unsetByProperty($properties) //array or single property name
+
+    setByName($name, $content)
+    unsetByName($properties) //array or single name
+
+    setCustom($key, $attributes) //unique key and attributes array
+    unsetCustom($keys) //array or single value
+    getMeta() // return metas string
+```
 
 # Usage:
 ## Register plugin as service:
