@@ -5,6 +5,9 @@ This plugin allows you to easily and flexibly customize the meta tags of your vi
 
 If this plugin helped you, be glad to see your star, thank you.
 
+Checkout new validation package for PhalconPHP
+https://github.com/izica/phalcon-validation
+
 * [Install](#Install)
 * [Plugin functions](#Plugin-functions)
 * [Usage](#Usage)
