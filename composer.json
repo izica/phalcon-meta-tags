@@ -1,12 +1,6 @@
 {
     "name": "izica/phalcon-meta-tags",
     "description": "Phalcon PHP Meta tags service",
-    "authors": [
-        {
-            "name": "Golovarchuk Artyom",
-            "email": "artemiztomska@gmail.com"
-        }
-    ],
     "keywords": ["phalcon", "meta", "tags", "metatags", "meta-tags", "phalconphp"],
     "license": "MIT",
     "require": {
